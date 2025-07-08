@@ -2,7 +2,7 @@
 
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Travel Recommendstion</title>
         <link rel="stylesheet" href="./travel_recommendation.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,13 +19,14 @@
                 <li><a href="./about_us.html">About Us</a></li>
                 <li><a href="./contact_us.html">Contact Us</a></li>
             </ul>
-            <form class="search-container">
-                <input type="text" placeholder="Enter a destination or keyword">
+            <form class="search-container" onsubmit="return false;">
+                <input type="text" placeholder="Enter a destination or keyword" id="userInput">
                 <span class="icon">&#128269;</span> <!-- unicode search icon -->
-                <button type="submit">Submit</button>
-                <button type="clear">Clear</button>
+                <button type="button" id="search-btn">Submit</button>
+                <button type="button" id="clear-btn">Clear</button>
             </form>    
         </nav>
+        <div id="search-result"></div>
         <div class="intro-text">
             <h2>DISCOVER<br>THE<br>WORLD</h2>
             <p>It inspires the journey into unknown horizons, welcoming the richness of diverse traditions and scenic marvels, all in pursuit of a destination that stirs the soul and awakens a sense of awe.</p>
@@ -38,6 +39,8 @@
             <a href="https://instagram.com" class="fa fa-instagram"></a>
             <a href="https://youtube.com" class="fa fa-youtube"></a>
         </div>
+
+        <script src="./travel_recommendation.js"></script>
     </body>
 
 </html>

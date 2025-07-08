@@ -2,9 +2,10 @@
 
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Travel Recommendstion</title>
         <link rel="stylesheet" href="./travel_recommendation.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
@@ -17,14 +18,31 @@
                 <li><a href="./about_us.html">About Us</a></li>
                 <li><a href="./contact_us.html">Contact Us</a></li>
             </ul>
-                <form class="search-container">
-                    <input type="text" placeholder="Enter a destination or keyword">
-                    <span class="icon">&#128269;</span> <!-- unicode search icon -->
-                    <button type="submit">Submit</button>
-                    <button type="clear">Clear</button>
-                </form>
         </nav>
-        <h1>Contact Us</h1>
+         <!-- SOCIAL MEDIA ICONS -->
+        <div class="social-icons">
+            <a href="https://facebook.com" class="fa fa-facebook"></a>
+            <a href="https://twitter.com" class="fa fa-twitter"></a>
+            <a href="https://instagram.com" class="fa fa-instagram"></a>
+            <a href="https://youtube.com" class="fa fa-youtube"></a>
+        </div>
+        <div class="div-contact-us">
+        <h1 id="contact-us">CONTACT US</h1>
+        <p id="touch-text">Get in touch</p>
+        <div class="contact-form">
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required placeholder="Type your name"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required placeholder="Type your email"><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" cols="80" rows="10" required placeholder="Type you message"></textarea><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     </body>
 
 </html>
